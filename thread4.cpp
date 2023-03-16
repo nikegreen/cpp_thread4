@@ -16,7 +16,6 @@ int DoWork(int a, int b)
 {
 	cout << "start thread id=" << this_thread::get_id() << endl;
 	this_thread::sleep_for(chrono::milliseconds(8000)); //имитация долгих вычислений
-	c++;
 	cout << " a+b=" << a + b << endl;
 	cout << "finish thread id=" << this_thread::get_id() << endl;
 	return a + b;
